@@ -1,0 +1,6 @@
+{
+  "C_Cpp.clang_format_path": "clang-format",
+  "C_Cpp.clang_format_fallbackStyle": "file",
+  "C_Cpp.errorSquiggles": "enabled",
+  "C_Cpp.codeAnalysis.clangTidy.enabled": true
+}
