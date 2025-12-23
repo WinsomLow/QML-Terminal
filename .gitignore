@@ -40,6 +40,12 @@
 # debug information files
 *.dwo
 
+# Generate files
+*.log
+
 build/
 bin/
 lib/
+
+# Package
+Qt/

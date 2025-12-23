@@ -1,6 +1,13 @@
 # Cpp-Project-Template
 C++ General Project Template
 
+## QML Terminal
+The QML terminal example uses a cross-platform PTY backend:
+- Windows uses ConPTY (`_WIN32` code path).
+- Linux/macOS use `forkpty` (`!_WIN32` code path).
+
+The backend is exposed to QML as `terminalBackend` and streams raw text; the UI renders it in `src/qml/Main.qml`.
+
 ## Layout
 - `3rdparty`: Third-party and vendored dependencies that are consumed by the build.
 - `include`: Public headers exposed by the repository.

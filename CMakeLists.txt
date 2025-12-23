@@ -6,6 +6,11 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
+# Default Qt path for aqt installs inside the repo.
+set(CMAKE_PREFIX_PATH
+    "${CMAKE_SOURCE_DIR}/3rdparty/Qt/6.8.3/msvc2022_64"
+    CACHE PATH "Qt install prefix (aqt)")
+
 set(COMMON_WARNING_FLAGS)
 if(MSVC)
     list(APPEND COMMON_WARNING_FLAGS /W4)
